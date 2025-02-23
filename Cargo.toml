@@ -1,0 +1,10 @@
+[package]
+name = "lidm-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+dotenv = "0.15.0"
+futures = "0.3.28"
+sea-orm = { version = "^0.12.0", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros", "with-chrono", "with-json", "with-uuid" ] }
